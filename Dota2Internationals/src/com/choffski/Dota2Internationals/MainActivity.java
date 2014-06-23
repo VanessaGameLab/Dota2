@@ -161,6 +161,8 @@ public class MainActivity extends ActionBarActivity {
 		
 		
 	}
+	
+	// open teams
 
 	public void startTeams (View view1) {
 		startActivity( new Intent (this, Teams.class));
