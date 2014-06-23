@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" 
+    
+       
+    android:background="@drawable/dotabg2">
+
+    <Button
+        android:id="@+id/btnTeams"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="Teams" 
+        android:onClick="startTeams"/>
+
+    <Button
+        android:id="@+id/btnMatches"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnTeams"
+        android:layout_alignLeft="@+id/btnTeams"
+        android:layout_alignRight="@+id/btnTeams"
+        android:text="Matches"
+        android:onClick="startMatches" />
+
+    <Button
+        android:id="@+id/btnFeeds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnTeams"
+        android:layout_alignRight="@+id/btnTeams"
+        android:layout_below="@+id/btnTeams"
+        android:text="Feeds" 
+        android:onClick="startFeeds"/>
+
+</RelativeLayout>
